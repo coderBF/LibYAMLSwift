@@ -8,12 +8,132 @@
 
 /* Begin PBXBuildFile section */
 		36CB6E031DA07F13004D8655 /* LibYAML.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CB6E011DA07F13004D8655 /* LibYAML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36CB6E8A1DA08322004D8655 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CB6E631DA08322004D8655 /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36CB6E8E1DA08322004D8655 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E681DA08322004D8655 /* api.c */; };
+		36CB6E8F1DA08322004D8655 /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E691DA08322004D8655 /* dumper.c */; };
+		36CB6E901DA08322004D8655 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E6A1DA08322004D8655 /* emitter.c */; };
+		36CB6E911DA08322004D8655 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E6B1DA08322004D8655 /* loader.c */; };
+		36CB6E931DA08322004D8655 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E6D1DA08322004D8655 /* parser.c */; };
+		36CB6E941DA08322004D8655 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E6E1DA08322004D8655 /* reader.c */; };
+		36CB6E951DA08322004D8655 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E6F1DA08322004D8655 /* scanner.c */; };
+		36CB6E961DA08322004D8655 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E701DA08322004D8655 /* writer.c */; };
+		36CB6E971DA08322004D8655 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CB6E711DA08322004D8655 /* yaml_private.h */; };
+		36CB6EA41DA08322004D8655 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CB6E801DA08322004D8655 /* config.h */; };
+		36CB6EDB1DA14783004D8655 /* LibYAMLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CB6ED21DA14783004D8655 /* LibYAMLSwift.framework */; };
+		36CB6EE01DA14783004D8655 /* LibYAMLSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6EDF1DA14783004D8655 /* LibYAMLSwiftTests.swift */; };
+		36CB6EE21DA14783004D8655 /* LibYAMLSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CB6ED41DA14783004D8655 /* LibYAMLSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36CB6EE91DA14793004D8655 /* YAMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6EC91DA08ADC004D8655 /* YAMLNode.swift */; };
+		36CB6EEA1DA14793004D8655 /* YAMLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6EC71DA08AC0004D8655 /* YAMLError.swift */; };
+		36CB6EEB1DA14793004D8655 /* YAMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6ECB1DA08B11004D8655 /* YAMLDocument.swift */; };
+		36CB6EEC1DA1485E004D8655 /* LibYAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CB6DFE1DA07F13004D8655 /* LibYAML.framework */; };
+		36CB6EEE1DA14F70004D8655 /* demo.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 36CB6EED1DA14F70004D8655 /* demo.yaml */; };
+		36CB6F221DA1F143004D8655 /* LibYAMLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CB6F191DA1F142004D8655 /* LibYAMLSwift.framework */; };
+		36CB6F301DA1F401004D8655 /* LibYAML.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CB6E011DA07F13004D8655 /* LibYAML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36CB6F321DA1F429004D8655 /* LibYAMLSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CB6ED41DA14783004D8655 /* LibYAMLSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36CB6F331DA1F47A004D8655 /* YAMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6EC91DA08ADC004D8655 /* YAMLNode.swift */; };
+		36CB6F341DA1F47A004D8655 /* YAMLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6EC71DA08AC0004D8655 /* YAMLError.swift */; };
+		36CB6F351DA1F47A004D8655 /* YAMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6ECB1DA08B11004D8655 /* YAMLDocument.swift */; };
+		36CB6F361DA1F483004D8655 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CB6E631DA08322004D8655 /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36CB6F371DA1F489004D8655 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E681DA08322004D8655 /* api.c */; };
+		36CB6F381DA1F489004D8655 /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E691DA08322004D8655 /* dumper.c */; };
+		36CB6F391DA1F489004D8655 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E6A1DA08322004D8655 /* emitter.c */; };
+		36CB6F3A1DA1F489004D8655 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E6B1DA08322004D8655 /* loader.c */; };
+		36CB6F3B1DA1F48D004D8655 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E6D1DA08322004D8655 /* parser.c */; };
+		36CB6F3C1DA1F48D004D8655 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E6E1DA08322004D8655 /* reader.c */; };
+		36CB6F3D1DA1F48D004D8655 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E6F1DA08322004D8655 /* scanner.c */; };
+		36CB6F3E1DA1F48D004D8655 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6E701DA08322004D8655 /* writer.c */; };
+		36CB6F3F1DA1F490004D8655 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CB6E711DA08322004D8655 /* yaml_private.h */; };
+		36CB6F401DA1F497004D8655 /* LibYAMLSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB6EDF1DA14783004D8655 /* LibYAMLSwiftTests.swift */; };
+		36CB6F411DA1F4AA004D8655 /* demo.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 36CB6EED1DA14F70004D8655 /* demo.yaml */; };
+		36CB6F431DA1F59D004D8655 /* LibYAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CB6F0C1DA1F126004D8655 /* LibYAML.framework */; };
+		36CB6F481DA1F6C4004D8655 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CB6E801DA08322004D8655 /* config.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36CB6EDC1DA14783004D8655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36CB6DF51DA07F13004D8655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36CB6ED11DA14783004D8655;
+			remoteInfo = LibYAMLSwift;
+		};
+		36CB6F231DA1F143004D8655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36CB6DF51DA07F13004D8655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36CB6F181DA1F142004D8655;
+			remoteInfo = "LibYAMLSwift-iOS";
+		};
+		36CB6F441DA1F5D1004D8655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36CB6DF51DA07F13004D8655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36CB6DFD1DA07F13004D8655;
+			remoteInfo = "LibYAML-macOS";
+		};
+		36CB6F461DA1F5D6004D8655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36CB6DF51DA07F13004D8655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36CB6F0B1DA1F126004D8655;
+			remoteInfo = "LibYAML-iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		36CB6DFE1DA07F13004D8655 /* LibYAML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibYAML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CB6E011DA07F13004D8655 /* LibYAML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibYAML.h; sourceTree = "<group>"; };
 		36CB6E021DA07F13004D8655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36CB6E5A1DA08322004D8655 /* .hgignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .hgignore; sourceTree = "<group>"; };
+		36CB6E5B1DA08322004D8655 /* announcement.msg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = announcement.msg; sourceTree = "<group>"; };
+		36CB6E5C1DA08322004D8655 /* bootstrap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bootstrap; sourceTree = "<group>"; };
+		36CB6E5D1DA08322004D8655 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		36CB6E5E1DA08322004D8655 /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		36CB6E601DA08322004D8655 /* doxygen.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.cfg; sourceTree = "<group>"; };
+		36CB6E621DA08322004D8655 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		36CB6E631DA08322004D8655 /* yaml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaml.h; sourceTree = "<group>"; };
+		36CB6E641DA08322004D8655 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		36CB6E651DA08322004D8655 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		36CB6E661DA08322004D8655 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		36CB6E681DA08322004D8655 /* api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = api.c; sourceTree = "<group>"; };
+		36CB6E691DA08322004D8655 /* dumper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dumper.c; sourceTree = "<group>"; };
+		36CB6E6A1DA08322004D8655 /* emitter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = emitter.c; sourceTree = "<group>"; };
+		36CB6E6B1DA08322004D8655 /* loader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loader.c; sourceTree = "<group>"; };
+		36CB6E6C1DA08322004D8655 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		36CB6E6D1DA08322004D8655 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		36CB6E6E1DA08322004D8655 /* reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reader.c; sourceTree = "<group>"; };
+		36CB6E6F1DA08322004D8655 /* scanner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scanner.c; sourceTree = "<group>"; };
+		36CB6E701DA08322004D8655 /* writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = writer.c; sourceTree = "<group>"; };
+		36CB6E711DA08322004D8655 /* yaml_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaml_private.h; sourceTree = "<group>"; };
+		36CB6E731DA08322004D8655 /* example-deconstructor-alt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "example-deconstructor-alt.c"; sourceTree = "<group>"; };
+		36CB6E741DA08322004D8655 /* example-deconstructor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "example-deconstructor.c"; sourceTree = "<group>"; };
+		36CB6E751DA08322004D8655 /* example-reformatter-alt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "example-reformatter-alt.c"; sourceTree = "<group>"; };
+		36CB6E761DA08322004D8655 /* example-reformatter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "example-reformatter.c"; sourceTree = "<group>"; };
+		36CB6E771DA08322004D8655 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		36CB6E781DA08322004D8655 /* run-dumper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "run-dumper.c"; sourceTree = "<group>"; };
+		36CB6E791DA08322004D8655 /* run-emitter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "run-emitter.c"; sourceTree = "<group>"; };
+		36CB6E7A1DA08322004D8655 /* run-loader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "run-loader.c"; sourceTree = "<group>"; };
+		36CB6E7B1DA08322004D8655 /* run-parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "run-parser.c"; sourceTree = "<group>"; };
+		36CB6E7C1DA08322004D8655 /* run-scanner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "run-scanner.c"; sourceTree = "<group>"; };
+		36CB6E7D1DA08322004D8655 /* test-reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-reader.c"; sourceTree = "<group>"; };
+		36CB6E7E1DA08322004D8655 /* test-version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-version.c"; sourceTree = "<group>"; };
+		36CB6E801DA08322004D8655 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		36CB6E811DA08322004D8655 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		36CB6E821DA08322004D8655 /* yaml-0.1.pc.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "yaml-0.1.pc.in"; sourceTree = "<group>"; };
+		36CB6EC71DA08AC0004D8655 /* YAMLError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMLError.swift; sourceTree = "<group>"; };
+		36CB6EC91DA08ADC004D8655 /* YAMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMLNode.swift; sourceTree = "<group>"; };
+		36CB6ECB1DA08B11004D8655 /* YAMLDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMLDocument.swift; sourceTree = "<group>"; };
+		36CB6ED21DA14783004D8655 /* LibYAMLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibYAMLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CB6ED41DA14783004D8655 /* LibYAMLSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibYAMLSwift.h; sourceTree = "<group>"; };
+		36CB6ED51DA14783004D8655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36CB6EDA1DA14783004D8655 /* LibYAMLSwift-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LibYAMLSwift-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CB6EDF1DA14783004D8655 /* LibYAMLSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibYAMLSwiftTests.swift; sourceTree = "<group>"; };
+		36CB6EE11DA14783004D8655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36CB6EED1DA14F70004D8655 /* demo.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demo.yaml; sourceTree = "<group>"; };
+		36CB6EEF1DA1EF82004D8655 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36CB6F0C1DA1F126004D8655 /* LibYAML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibYAML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CB6F191DA1F142004D8655 /* LibYAMLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibYAMLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CB6F211DA1F143004D8655 /* LibYAMLSwift-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LibYAMLSwift-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +144,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36CB6ECE1DA14783004D8655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6EEC1DA1485E004D8655 /* LibYAML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6ED71DA14783004D8655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6EDB1DA14783004D8655 /* LibYAMLSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F081DA1F126004D8655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F151DA1F142004D8655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6F431DA1F59D004D8655 /* LibYAML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F1E1DA1F143004D8655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6F221DA1F143004D8655 /* LibYAMLSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,7 +190,10 @@
 			isa = PBXGroup;
 			children = (
 				36CB6E001DA07F13004D8655 /* LibYAML */,
+				36CB6ED31DA14783004D8655 /* LibYAMLSwift */,
+				36CB6EDE1DA14783004D8655 /* LibYAMLSwiftTests */,
 				36CB6DFF1DA07F13004D8655 /* Products */,
+				36CB6EEF1DA1EF82004D8655 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +201,11 @@
 			isa = PBXGroup;
 			children = (
 				36CB6DFE1DA07F13004D8655 /* LibYAML.framework */,
+				36CB6ED21DA14783004D8655 /* LibYAMLSwift.framework */,
+				36CB6EDA1DA14783004D8655 /* LibYAMLSwift-macOSTests.xctest */,
+				36CB6F0C1DA1F126004D8655 /* LibYAML.framework */,
+				36CB6F191DA1F142004D8655 /* LibYAMLSwift.framework */,
+				36CB6F211DA1F143004D8655 /* LibYAMLSwift-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +213,116 @@
 		36CB6E001DA07F13004D8655 /* LibYAML */ = {
 			isa = PBXGroup;
 			children = (
-				36CB6E011DA07F13004D8655 /* LibYAML.h */,
+				36CB6E591DA08322004D8655 /* libyaml */,
 				36CB6E021DA07F13004D8655 /* Info.plist */,
+				36CB6E011DA07F13004D8655 /* LibYAML.h */,
 			);
 			path = LibYAML;
+			sourceTree = "<group>";
+		};
+		36CB6E591DA08322004D8655 /* libyaml */ = {
+			isa = PBXGroup;
+			children = (
+				36CB6E5F1DA08322004D8655 /* doc */,
+				36CB6E611DA08322004D8655 /* include */,
+				36CB6E671DA08322004D8655 /* src */,
+				36CB6E721DA08322004D8655 /* tests */,
+				36CB6E7F1DA08322004D8655 /* win32 */,
+				36CB6E5A1DA08322004D8655 /* .hgignore */,
+				36CB6E5D1DA08322004D8655 /* CMakeLists.txt */,
+				36CB6E641DA08322004D8655 /* LICENSE */,
+				36CB6E651DA08322004D8655 /* Makefile.am */,
+				36CB6E661DA08322004D8655 /* README */,
+				36CB6E5B1DA08322004D8655 /* announcement.msg */,
+				36CB6E5C1DA08322004D8655 /* bootstrap */,
+				36CB6E5E1DA08322004D8655 /* configure.ac */,
+				36CB6E821DA08322004D8655 /* yaml-0.1.pc.in */,
+			);
+			path = libyaml;
+			sourceTree = "<group>";
+		};
+		36CB6E5F1DA08322004D8655 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				36CB6E601DA08322004D8655 /* doxygen.cfg */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		36CB6E611DA08322004D8655 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				36CB6E621DA08322004D8655 /* Makefile.am */,
+				36CB6E631DA08322004D8655 /* yaml.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		36CB6E671DA08322004D8655 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				36CB6E6C1DA08322004D8655 /* Makefile.am */,
+				36CB6E681DA08322004D8655 /* api.c */,
+				36CB6E691DA08322004D8655 /* dumper.c */,
+				36CB6E6A1DA08322004D8655 /* emitter.c */,
+				36CB6E6B1DA08322004D8655 /* loader.c */,
+				36CB6E6D1DA08322004D8655 /* parser.c */,
+				36CB6E6E1DA08322004D8655 /* reader.c */,
+				36CB6E6F1DA08322004D8655 /* scanner.c */,
+				36CB6E701DA08322004D8655 /* writer.c */,
+				36CB6E711DA08322004D8655 /* yaml_private.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		36CB6E721DA08322004D8655 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				36CB6E771DA08322004D8655 /* Makefile.am */,
+				36CB6E731DA08322004D8655 /* example-deconstructor-alt.c */,
+				36CB6E741DA08322004D8655 /* example-deconstructor.c */,
+				36CB6E751DA08322004D8655 /* example-reformatter-alt.c */,
+				36CB6E761DA08322004D8655 /* example-reformatter.c */,
+				36CB6E781DA08322004D8655 /* run-dumper.c */,
+				36CB6E791DA08322004D8655 /* run-emitter.c */,
+				36CB6E7A1DA08322004D8655 /* run-loader.c */,
+				36CB6E7B1DA08322004D8655 /* run-parser.c */,
+				36CB6E7C1DA08322004D8655 /* run-scanner.c */,
+				36CB6E7D1DA08322004D8655 /* test-reader.c */,
+				36CB6E7E1DA08322004D8655 /* test-version.c */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		36CB6E7F1DA08322004D8655 /* win32 */ = {
+			isa = PBXGroup;
+			children = (
+				36CB6E811DA08322004D8655 /* Makefile.am */,
+				36CB6E801DA08322004D8655 /* config.h */,
+			);
+			path = win32;
+			sourceTree = "<group>";
+		};
+		36CB6ED31DA14783004D8655 /* LibYAMLSwift */ = {
+			isa = PBXGroup;
+			children = (
+				36CB6ED51DA14783004D8655 /* Info.plist */,
+				36CB6ED41DA14783004D8655 /* LibYAMLSwift.h */,
+				36CB6ECB1DA08B11004D8655 /* YAMLDocument.swift */,
+				36CB6EC71DA08AC0004D8655 /* YAMLError.swift */,
+				36CB6EC91DA08ADC004D8655 /* YAMLNode.swift */,
+			);
+			path = LibYAMLSwift;
+			sourceTree = "<group>";
+		};
+		36CB6EDE1DA14783004D8655 /* LibYAMLSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				36CB6EE11DA14783004D8655 /* Info.plist */,
+				36CB6EDF1DA14783004D8655 /* LibYAMLSwiftTests.swift */,
+				36CB6EED1DA14F70004D8655 /* demo.yaml */,
+			);
+			path = LibYAMLSwiftTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,16 +332,46 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CB6EA41DA08322004D8655 /* config.h in Headers */,
 				36CB6E031DA07F13004D8655 /* LibYAML.h in Headers */,
+				36CB6E971DA08322004D8655 /* yaml_private.h in Headers */,
+				36CB6E8A1DA08322004D8655 /* yaml.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6ECF1DA14783004D8655 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6EE21DA14783004D8655 /* LibYAMLSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F091DA1F126004D8655 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6F481DA1F6C4004D8655 /* config.h in Headers */,
+				36CB6F301DA1F401004D8655 /* LibYAML.h in Headers */,
+				36CB6F3F1DA1F490004D8655 /* yaml_private.h in Headers */,
+				36CB6F361DA1F483004D8655 /* yaml.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F161DA1F142004D8655 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6F321DA1F429004D8655 /* LibYAMLSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		36CB6DFD1DA07F13004D8655 /* LibYAML */ = {
+		36CB6DFD1DA07F13004D8655 /* LibYAML-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36CB6E061DA07F13004D8655 /* Build configuration list for PBXNativeTarget "LibYAML" */;
+			buildConfigurationList = 36CB6E061DA07F13004D8655 /* Build configuration list for PBXNativeTarget "LibYAML-macOS" */;
 			buildPhases = (
 				36CB6DF91DA07F13004D8655 /* Sources */,
 				36CB6DFA1DA07F13004D8655 /* Frameworks */,
@@ -79,10 +382,102 @@
 			);
 			dependencies = (
 			);
-			name = LibYAML;
+			name = "LibYAML-macOS";
 			productName = LibYAML;
 			productReference = 36CB6DFE1DA07F13004D8655 /* LibYAML.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		36CB6ED11DA14783004D8655 /* LibYAMLSwift-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CB6EE71DA14783004D8655 /* Build configuration list for PBXNativeTarget "LibYAMLSwift-macOS" */;
+			buildPhases = (
+				36CB6ECD1DA14783004D8655 /* Sources */,
+				36CB6ECE1DA14783004D8655 /* Frameworks */,
+				36CB6ECF1DA14783004D8655 /* Headers */,
+				36CB6ED01DA14783004D8655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36CB6F451DA1F5D1004D8655 /* PBXTargetDependency */,
+			);
+			name = "LibYAMLSwift-macOS";
+			productName = LibYAMLSwift;
+			productReference = 36CB6ED21DA14783004D8655 /* LibYAMLSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		36CB6ED91DA14783004D8655 /* LibYAMLSwift-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CB6EE81DA14783004D8655 /* Build configuration list for PBXNativeTarget "LibYAMLSwift-macOSTests" */;
+			buildPhases = (
+				36CB6ED61DA14783004D8655 /* Sources */,
+				36CB6ED71DA14783004D8655 /* Frameworks */,
+				36CB6ED81DA14783004D8655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36CB6EDD1DA14783004D8655 /* PBXTargetDependency */,
+			);
+			name = "LibYAMLSwift-macOSTests";
+			productName = LibYAMLSwiftTests;
+			productReference = 36CB6EDA1DA14783004D8655 /* LibYAMLSwift-macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36CB6F0B1DA1F126004D8655 /* LibYAML-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CB6F111DA1F127004D8655 /* Build configuration list for PBXNativeTarget "LibYAML-iOS" */;
+			buildPhases = (
+				36CB6F071DA1F126004D8655 /* Sources */,
+				36CB6F081DA1F126004D8655 /* Frameworks */,
+				36CB6F091DA1F126004D8655 /* Headers */,
+				36CB6F0A1DA1F126004D8655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LibYAML-iOS";
+			productName = LibYAML;
+			productReference = 36CB6F0C1DA1F126004D8655 /* LibYAML.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		36CB6F181DA1F142004D8655 /* LibYAMLSwift-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CB6F2A1DA1F143004D8655 /* Build configuration list for PBXNativeTarget "LibYAMLSwift-iOS" */;
+			buildPhases = (
+				36CB6F141DA1F142004D8655 /* Sources */,
+				36CB6F151DA1F142004D8655 /* Frameworks */,
+				36CB6F161DA1F142004D8655 /* Headers */,
+				36CB6F171DA1F142004D8655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36CB6F471DA1F5D6004D8655 /* PBXTargetDependency */,
+			);
+			name = "LibYAMLSwift-iOS";
+			productName = "LibYAMLSwift-iOS";
+			productReference = 36CB6F191DA1F142004D8655 /* LibYAMLSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		36CB6F201DA1F143004D8655 /* LibYAMLSwift-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CB6F2D1DA1F143004D8655 /* Build configuration list for PBXNativeTarget "LibYAMLSwift-iOSTests" */;
+			buildPhases = (
+				36CB6F1D1DA1F143004D8655 /* Sources */,
+				36CB6F1E1DA1F143004D8655 /* Frameworks */,
+				36CB6F1F1DA1F143004D8655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36CB6F241DA1F143004D8655 /* PBXTargetDependency */,
+			);
+			name = "LibYAMLSwift-iOSTests";
+			productName = "LibYAMLSwift-iOSTests";
+			productReference = 36CB6F211DA1F143004D8655 /* LibYAMLSwift-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,11 +485,33 @@
 		36CB6DF51DA07F13004D8655 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Zhuhao Wang";
 				TargetAttributes = {
 					36CB6DFD1DA07F13004D8655 = {
 						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					36CB6ED11DA14783004D8655 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					36CB6ED91DA14783004D8655 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					36CB6F0B1DA1F126004D8655 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					36CB6F181DA1F142004D8655 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					36CB6F201DA1F143004D8655 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = H5443445N6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -111,7 +528,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36CB6DFD1DA07F13004D8655 /* LibYAML */,
+				36CB6DFD1DA07F13004D8655 /* LibYAML-macOS */,
+				36CB6ED11DA14783004D8655 /* LibYAMLSwift-macOS */,
+				36CB6ED91DA14783004D8655 /* LibYAMLSwift-macOSTests */,
+				36CB6F0B1DA1F126004D8655 /* LibYAML-iOS */,
+				36CB6F181DA1F142004D8655 /* LibYAMLSwift-iOS */,
+				36CB6F201DA1F143004D8655 /* LibYAMLSwift-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +546,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36CB6ED01DA14783004D8655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6ED81DA14783004D8655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6EEE1DA14F70004D8655 /* demo.yaml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F0A1DA1F126004D8655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F171DA1F142004D8655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F1F1DA1F143004D8655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6F411DA1F4AA004D8655 /* demo.yaml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -131,10 +590,92 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CB6E911DA08322004D8655 /* loader.c in Sources */,
+				36CB6E951DA08322004D8655 /* scanner.c in Sources */,
+				36CB6E8F1DA08322004D8655 /* dumper.c in Sources */,
+				36CB6E8E1DA08322004D8655 /* api.c in Sources */,
+				36CB6E931DA08322004D8655 /* parser.c in Sources */,
+				36CB6E941DA08322004D8655 /* reader.c in Sources */,
+				36CB6E961DA08322004D8655 /* writer.c in Sources */,
+				36CB6E901DA08322004D8655 /* emitter.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6ECD1DA14783004D8655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6EE91DA14793004D8655 /* YAMLNode.swift in Sources */,
+				36CB6EEA1DA14793004D8655 /* YAMLError.swift in Sources */,
+				36CB6EEB1DA14793004D8655 /* YAMLDocument.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6ED61DA14783004D8655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6EE01DA14783004D8655 /* LibYAMLSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F071DA1F126004D8655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6F3A1DA1F489004D8655 /* loader.c in Sources */,
+				36CB6F3D1DA1F48D004D8655 /* scanner.c in Sources */,
+				36CB6F381DA1F489004D8655 /* dumper.c in Sources */,
+				36CB6F371DA1F489004D8655 /* api.c in Sources */,
+				36CB6F3B1DA1F48D004D8655 /* parser.c in Sources */,
+				36CB6F3C1DA1F48D004D8655 /* reader.c in Sources */,
+				36CB6F3E1DA1F48D004D8655 /* writer.c in Sources */,
+				36CB6F391DA1F489004D8655 /* emitter.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F141DA1F142004D8655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6F331DA1F47A004D8655 /* YAMLNode.swift in Sources */,
+				36CB6F341DA1F47A004D8655 /* YAMLError.swift in Sources */,
+				36CB6F351DA1F47A004D8655 /* YAMLDocument.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB6F1D1DA1F143004D8655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CB6F401DA1F497004D8655 /* LibYAMLSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36CB6EDD1DA14783004D8655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36CB6ED11DA14783004D8655 /* LibYAMLSwift-macOS */;
+			targetProxy = 36CB6EDC1DA14783004D8655 /* PBXContainerItemProxy */;
+		};
+		36CB6F241DA1F143004D8655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36CB6F181DA1F142004D8655 /* LibYAMLSwift-iOS */;
+			targetProxy = 36CB6F231DA1F143004D8655 /* PBXContainerItemProxy */;
+		};
+		36CB6F451DA1F5D1004D8655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36CB6DFD1DA07F13004D8655 /* LibYAML-macOS */;
+			targetProxy = 36CB6F441DA1F5D1004D8655 /* PBXContainerItemProxy */;
+		};
+		36CB6F471DA1F5D6004D8655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36CB6F0B1DA1F126004D8655 /* LibYAML-iOS */;
+			targetProxy = 36CB6F461DA1F5D6004D8655 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		36CB6E041DA07F13004D8655 /* Debug */ = {
@@ -168,17 +709,15 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -218,13 +757,15 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -236,6 +777,7 @@
 		36CB6E071DA07F13004D8655 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -243,11 +785,15 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = LibYAML/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.LibYAML;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LibYAML;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -256,6 +802,7 @@
 		36CB6E081DA07F13004D8655 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -267,9 +814,224 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.LibYAML;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LibYAML;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		36CB6EE31DA14783004D8655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LibYAMLSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.LibYAMLSwift;
+				PRODUCT_NAME = LibYAMLSwift;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		36CB6EE41DA14783004D8655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = LibYAMLSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.LibYAMLSwift;
+				PRODUCT_NAME = LibYAMLSwift;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		36CB6EE51DA14783004D8655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LibYAMLSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.LibYAMLSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		36CB6EE61DA14783004D8655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LibYAMLSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.LibYAMLSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		36CB6F121DA1F127004D8655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LibYAML/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.ios.LibYAML;
+				PRODUCT_NAME = LibYAML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36CB6F131DA1F127004D8655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LibYAML/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.ios.LibYAML;
+				PRODUCT_NAME = LibYAML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36CB6F2B1DA1F143004D8655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LibYAMLSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.zhuhaow.ios.LibYAMLSwift-iOS";
+				PRODUCT_NAME = LibYAMLSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36CB6F2C1DA1F143004D8655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LibYAMLSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.zhuhaow.ios.LibYAMLSwift-iOS";
+				PRODUCT_NAME = LibYAMLSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36CB6F2E1DA1F143004D8655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H5443445N6;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LibYAMLSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.zhuhaow.ios.LibYAMLSwift-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		36CB6F2F1DA1F143004D8655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H5443445N6;
+				INFOPLIST_FILE = LibYAMLSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.zhuhaow.ios.LibYAMLSwift-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -285,13 +1047,59 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36CB6E061DA07F13004D8655 /* Build configuration list for PBXNativeTarget "LibYAML" */ = {
+		36CB6E061DA07F13004D8655 /* Build configuration list for PBXNativeTarget "LibYAML-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36CB6E071DA07F13004D8655 /* Debug */,
 				36CB6E081DA07F13004D8655 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36CB6EE71DA14783004D8655 /* Build configuration list for PBXNativeTarget "LibYAMLSwift-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CB6EE31DA14783004D8655 /* Debug */,
+				36CB6EE41DA14783004D8655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36CB6EE81DA14783004D8655 /* Build configuration list for PBXNativeTarget "LibYAMLSwift-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CB6EE51DA14783004D8655 /* Debug */,
+				36CB6EE61DA14783004D8655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36CB6F111DA1F127004D8655 /* Build configuration list for PBXNativeTarget "LibYAML-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CB6F121DA1F127004D8655 /* Debug */,
+				36CB6F131DA1F127004D8655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36CB6F2A1DA1F143004D8655 /* Build configuration list for PBXNativeTarget "LibYAMLSwift-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CB6F2B1DA1F143004D8655 /* Debug */,
+				36CB6F2C1DA1F143004D8655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36CB6F2D1DA1F143004D8655 /* Build configuration list for PBXNativeTarget "LibYAMLSwift-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CB6F2E1DA1F143004D8655 /* Debug */,
+				36CB6F2F1DA1F143004D8655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,53 @@
+# Derived from https://raw.githubusercontent.com/nodeca/js-yaml/master/examples/sample_document.yml
+
+map:
+  # Explicitly typed ordered map (dictionary).
+  Bestiary:
+    - aardvark: African pig-like ant eater. Ugly.
+    - anteater: South-American ant eater. Two species.
+    - anaconda: South-American constrictor snake. Scaly.
+
+pairs:
+  # Explicitly typed pairs.
+  Block tasks:
+    - meeting: with team.
+    - meeting: with boss.
+    - break: lunch.
+    - meeting: with client.
+
+seq:
+  Block style:
+  - Mercury   # Rotates - no light/dark sides.
+  - Venus     # Deadliest. Aptly named.
+  - Earth     # Mostly dirt.
+  - Mars      # Seems empty.
+  - Jupiter   # The king.
+  - Saturn    # Pretty.
+  - Uranus    # Where the sun hardly shines.
+  - Neptune   # Boring. No rings.
+  - Pluto     # You call this a planet?
+
+bool:
+  - true
+  - True
+  - TRUE
+  - false
+  - False
+  - FALSE
+
+
+float:
+  canonical: 6.8523015e+5
+  exponentioal: 685.230_15e+03
+  fixed: 685_230.15
+  sexagesimal: 190:20:30.15
+
+int:
+  canonical: 685230
+  decimal: +685_230
+  octal: 02472256
+  hexadecimal: 0x_0A_74_AE
+  binary: 0b1010_0111_0100_1010_1110
+  sexagesimal: 190:20:30
+
+string: abcd
