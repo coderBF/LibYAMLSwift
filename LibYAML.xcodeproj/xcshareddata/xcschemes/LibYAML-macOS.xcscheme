@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "36CB6ED11DA14783004D8655"
-               BuildableName = "LibYAMLSwift-macOS.framework"
-               BlueprintName = "LibYAMLSwift-macOS"
+               BlueprintIdentifier = "36CB6DFD1DA07F13004D8655"
+               BuildableName = "LibYAML.framework"
+               BlueprintName = "LibYAML-macOS"
                ReferencedContainer = "container:LibYAML.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "36CB6ED91DA14783004D8655"
-               BuildableName = "LibYAMLSwift-macOSTests.xctest"
-               BlueprintName = "LibYAMLSwift-macOSTests"
-               ReferencedContainer = "container:LibYAML.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36CB6ED11DA14783004D8655"
-            BuildableName = "LibYAMLSwift-macOS.framework"
-            BlueprintName = "LibYAMLSwift-macOS"
-            ReferencedContainer = "container:LibYAML.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36CB6ED11DA14783004D8655"
-            BuildableName = "LibYAMLSwift-macOS.framework"
-            BlueprintName = "LibYAMLSwift-macOS"
+            BlueprintIdentifier = "36CB6DFD1DA07F13004D8655"
+            BuildableName = "LibYAML.framework"
+            BlueprintName = "LibYAML-macOS"
             ReferencedContainer = "container:LibYAML.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36CB6ED11DA14783004D8655"
-            BuildableName = "LibYAMLSwift-macOS.framework"
-            BlueprintName = "LibYAMLSwift-macOS"
+            BlueprintIdentifier = "36CB6DFD1DA07F13004D8655"
+            BuildableName = "LibYAML.framework"
+            BlueprintName = "LibYAML-macOS"
             ReferencedContainer = "container:LibYAML.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

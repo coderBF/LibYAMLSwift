@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36CB6F0B1DA1F126004D8655"
-               BuildableName = "LibYAML-iOS.framework"
+               BuildableName = "LibYAML.framework"
                BlueprintName = "LibYAML-iOS"
                ReferencedContainer = "container:LibYAML.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36CB6F0B1DA1F126004D8655"
-            BuildableName = "LibYAML-iOS.framework"
+            BuildableName = "LibYAML.framework"
             BlueprintName = "LibYAML-iOS"
             ReferencedContainer = "container:LibYAML.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36CB6F0B1DA1F126004D8655"
-            BuildableName = "LibYAML-iOS.framework"
+            BuildableName = "LibYAML.framework"
             BlueprintName = "LibYAML-iOS"
             ReferencedContainer = "container:LibYAML.xcodeproj">
          </BuildableReference>
